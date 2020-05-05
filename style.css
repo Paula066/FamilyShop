@@ -162,6 +162,66 @@ body {
   padding-bottom: 30px;
 }
 
+.smallProducts--marginBottom {
+  margin-bottom: 4rem;
+}
+
+.smallProducts__img {
+  width: 100%;
+  height: 100%;
+}
+
+.smallProducts__photo {
+  position: relative;
+}
+
+.smallProducts__bestseller {
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  background-color: white;
+  text-transform: uppercase;
+  color: #3fafe2;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.smallProducts__bestseller p {
+  margin-bottom: 0;
+}
+
+.smallProducts__bargain {
+  position: absolute;
+  top: 14px;
+  right: 8px;
+  background-color: #ffe8e0;
+  color: #f35923;
+  padding: 5px 9px;
+  font-weight: 600;
+}
+
+.smallProducts__bargain p {
+  margin-bottom: 0;
+}
+
+.smallProducts__price {
+  font-size: 1.8rem;
+}
+
+.smallProducts__price span:first-child {
+  margin-right: 1rem;
+}
+
+.smallProducts__price span:last-child {
+  text-decoration: line-through;
+}
+
+.smallProducts__desc {
+  font-size: 1.5rem;
+  padding: 2.9rem 0;
+}
+
 .products {
   padding-top: 30px;
 }
@@ -169,8 +229,9 @@ body {
 .products__box {
   flex: 1;
   height: 330px;
-  margin-right: 30px;
+  margin-right: 3rem;
   background-color: #fbf2f5;
+  margin-top: 3rem;
 }
 
 .products__box:last-child {
@@ -225,76 +286,6 @@ body {
   font-weight: 600;
   padding: 5rem 0;
   text-transform: uppercase;
-  margin-bottom: 0;
-}
-
-.smallProducts {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.smallProducts__product {
-  flex: 1;
-  max-width: 100%;
-  max-width: 100%;
-}
-
-.smallProducts__img {
-  width: 100%;
-  height: 100%;
-}
-
-.smallProducts__photo {
-  margin-right: 30px;
-  position: relative;
-}
-
-.smallProducts__desc {
-  font-size: 1.5rem;
-  padding: 2.9rem 0;
-}
-
-.smallProducts__price {
-  font-size: 1.8rem;
-}
-
-.smallProducts__price span:first-child {
-  margin-right: 1rem;
-}
-
-.smallProducts__price span:last-child {
-  text-decoration: line-through;
-}
-
-.smallProducts__ico {
-  position: absolute;
-  top: 14px;
-  left: 8px;
-  background-color: white;
-  text-transform: uppercase;
-  color: #3fafe2;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 5px 10px;
-}
-
-.smallProducts__ico p {
-  margin-bottom: 0;
-}
-
-.smallProducts__bargain {
-  position: absolute;
-  top: 14px;
-  right: 8px;
-  background-color: #ffe8e0;
-  color: #f35923;
-  padding: 5px 9px;
-  font-weight: 600;
-}
-
-.smallProducts__bargain p {
   margin-bottom: 0;
 }
 
