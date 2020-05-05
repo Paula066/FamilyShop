@@ -17,6 +17,11 @@ body {
     background-color: white;
 }
 
+.slider__img {
+    width: 100%;
+    height: 100%;
+}
+
 .header {
     background-color: #28a9e0 !important;
     &__list {
@@ -52,6 +57,10 @@ body {
         width: 30px;
         height: 30px;
         background-repeat: no-repeat;
+
+        @include sm {
+            display: none;
+        }
     }
     &__li:not(:last-child):after {
         content: '';
@@ -62,6 +71,14 @@ body {
         height: 100%;
         display: inline-block;
         background-color: white;
+
+        @include md{
+           right: -40px;
+        }
+
+        @include sm {
+            right: -28px;
+        }
     }
 }
 
@@ -112,6 +129,10 @@ body {
     &__a {
        color: black;
        font-size: 1.2rem;
+
+       @include sm {
+       font-size: 0;
+    }
    }
 }
 
@@ -123,6 +144,10 @@ body {
 }
 
 .nav {
+    @include sm {
+       visibility: hidden;
+       max-height: 0;
+    }
     &-item {
         padding: 27px 0;
     }
@@ -132,11 +157,18 @@ body {
         text-transform: uppercase;
         font-weight: 500;
         padding: 0 4rem;
+
+        @include md{
+            padding: 0 2rem;
+        }
     }
 }
 
 .search {
     padding: 2.7rem 1.5rem;
+    @include sm {
+        margin-right: 2rem;
+    }
 }
 
 .main {
@@ -164,6 +196,11 @@ body {
         font-weight: 600;
         font-size: 1rem;
         padding: 5px 10px;
+        @include md{
+            padding: 2px 0;
+            top: 9px;
+            left: 4px;
+        }
         p {
             margin-bottom: 0;
         }
@@ -177,6 +214,12 @@ body {
         color: #f35923;
         padding: 5px 9px;
         font-weight: 600;
+
+        @include md {
+            padding: 2px 0;
+            top: 9px;
+            right: 4px;
+        }
 
         p {
             margin-bottom: 0;
@@ -212,6 +255,13 @@ body {
         background-color: #fbf2f5;
         margin-top: 3rem;
 
+
+        @include sm {
+            flex-basis: 100%;
+            min-width: 100%;
+            max-width: 100%;
+         }
+
         &:last-child {
             margin-right: 0;
             background-color: #ddf5ff;
@@ -243,12 +293,22 @@ body {
     &__content {
         flex: 1;
         text-align: center;
+
+      
     }
 
     &__desc {
         p {
             font-size: 3rem;
             text-transform: uppercase;
+
+            @include lg {
+                font-size: 2.7rem;
+            }
+
+            @include md {
+                font-size: 2.2rem;
+            }
         }
     }
 
@@ -290,6 +350,8 @@ body {
     border-bottom: 1px solid #e6e6e6;
     font-family: 'Montserrat', sans-serif;
 
+  
+
     &__top {
         padding-top: 2rem;
     }
@@ -314,6 +376,9 @@ body {
     }
     &__bottom {
         display: flex;
+        @include sm {
+            flex-wrap: wrap;
+        }
     }
 
     &__box {
@@ -321,15 +386,35 @@ body {
         text-transform: uppercase;
         margin-bottom: 3rem;
         text-align: left;
+
+        @include sm {
+            flex-basis: 100%;
+            text-align: center;
+        }
     }
+    &__flex {
+        @include sm {
+            display: flex;
+        }
+   }
     &__info h3{
         font-size: 1.5rem;
         margin-bottom: 4rem;
         font-weight: 600;
+
+        @include md{
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+        }
     }
     &__information {
         padding: 1rem 0;
         font-size: 1.2rem;
+
+        @include md{
+            padding: 0.5rem;
+            font-size: 1.3rem;
+        }
         a {
             color: black;
         }
@@ -343,6 +428,10 @@ body {
         text-align: left;
         padding-left: 4rem;
         font-family: 'Poppins', sans-serif;
+
+        @include sm {
+            padding: 2rem;
+        }
     }
     &__about {
         color: black;
@@ -357,6 +446,10 @@ body {
 
     &__logo {
         padding-bottom: 2rem;
+
+        @include sm {
+            flex: 1;
+        }
     }
 
     &__end {
@@ -391,6 +484,14 @@ body {
            padding-left: 15px;
            outline: none;
            font-size: 1.4rem;
+
+           @include sm {
+               width: 70%;
+           }
+       }
+
+       &__thanks {
+           margin-top: 3rem;
        }
 
        &__button {
@@ -404,11 +505,11 @@ body {
            border: 1px solid #28a9e0;
            font-size: 1.4rem;
            outline: none;
+
+           @include sm {
+            width: 20%;
+        }
        }
     }
-
-
-
-    
 }
 
