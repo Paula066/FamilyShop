@@ -57,6 +57,9 @@
     </div>
     <nav class="navigation">
         <div class="container d-flex justify-content-center bg-white">
+            <div class="hamburger">
+                <i class="fas fa-bars hamburger__ico"></i>
+            </div>
             <ul class="nav d-flex ">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">kategorie</a>
@@ -79,8 +82,32 @@
             </ul>
             <div class="search d-flex bg-white">
                 <a class="search__box" href="#">
-                    <img src="./img/ico9.png" alt="" class="search__ico">
+                    <i class="fas fa-search search__ico"></i>
                 </a>
+            </div>
+        </div>
+        <div class="mobile mobile__show bg-white">
+            <div class="container">
+                <ul class="mobile__categoryList">
+                    <li class="nav-item mobile__li">
+                        <a class="nav-link active" href="#">kategorie</a>
+                    </li>
+                    <li class="nav-item mobile__li">
+                        <a class="nav-link" href="#">promocje</a>
+                    </li>
+                    <li class="nav-item mobile__li">
+                        <a class="nav-link" href="#">nowości</a>
+                    </li>
+                    <li class="nav-item mobile__li">
+                        <a class="nav-link " href="#">o nas</a>
+                    </li>
+                    <li class="nav-item mobile__li">
+                        <a class="nav-link active" href="#">dostawa</a>
+                    </li>
+                    <li class="nav-item mobile__li">
+                        <a class="nav-link" href="#">kontakt</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -93,16 +120,16 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/skyimg.png" alt="" class="d-block">
+                    <img src="./img/skyimg.png" alt="" class="d-block slider__img">
                 </div>
                 <div class="carousel-item ">
-                    <img src="./img/skyimg.png" alt="" class="d-block">
+                    <img src="./img/skyimg.png" alt="" class="d-block slider__img">
                 </div>
                 <div class="carousel-item ">
-                    <img src="./img/skyimg.png" alt="" class="d-block">
+                    <img src="./img/skyimg.png" alt="" class="d-block slider__img">
                 </div>
                 <div class="carousel-item ">
-                    <img src="./img/skyimg.png" alt="" class="d-block">
+                    <img src="./img/skyimg.png" alt="" class="d-block slider__img">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselContainer" role="button" data-slide="prev">
@@ -181,7 +208,7 @@
         </div>
         <div class="container smallProducts">
             <div class="row text-center ">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 smallProducts__marginB">
                     <div class="smallProducts__photo">
                         <img class="smallProducts__img" src="img/p7.png">
                         <div class="smallProducts__bestseller">
@@ -199,7 +226,7 @@
                         <span>109,99 zł</span>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 smallProducts__marginB">
                     <div class="smallProducts__photo">
                         <img class="smallProducts__img" src="img/p7.png">
                         <div class="smallProducts__bestseller">
@@ -260,7 +287,7 @@
         </div>
         <div class="container smallProducts smallProducts--marginBottom">
             <div class="row text-center">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 smallProducts__marginB">
                     <div class="smallProducts__photo">
                         <img class="smallProducts__img" src="img/p7.png">
                         <div class="smallProducts__bestseller">
@@ -296,7 +323,7 @@
                         <span>109,99 zł</span>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 smallProducts__marginB">
                     <div class="smallProducts__photo">
                         <img class="smallProducts__img" src="img/p7.png">
                         <div class="smallProducts__bestseller">
@@ -314,7 +341,7 @@
                         <span>109,99 zł</span>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 smallProducts__marginB">
                     <div class="smallProducts__photo">
                         <img class="smallProducts__img" src="img/p7.png">
                         <div class="smallProducts__bestseller">
@@ -336,7 +363,7 @@
         </div>
         <div class="container smallProducts">
             <div class="row text-center">
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 smallProducts__marginB">
                     <div class="smallProducts__photo">
                         <img class="smallProducts__img" src="img/p7.png">
                         <div class="smallProducts__bestseller">
@@ -354,7 +381,7 @@
                         <span>109,99 zł</span>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 smallProducts__marginB">
                     <div class="smallProducts__photo">
                         <img class="smallProducts__img" src="img/p7.png">
                         <div class="smallProducts__bestseller">
@@ -426,7 +453,7 @@
             <form class="form">
                 <input placeholder="twójadresemail" class="form__input" type="text">
                 <button class="form__button">zapisz</button>
-                <h1></h1>
+                <h4 class="form__thanks"></h4>
             </form>
         </div>
     </footer>
@@ -498,7 +525,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer__box">
+            <div class="footer__box footer__flex">
                 <div class="footer__logo">
                     <img class="footer__img " src="./img/logof.png" alt="">
                 </div>
