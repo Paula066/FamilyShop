@@ -35,6 +35,8 @@ body {
     &__li {
         position: relative;
 
+       
+
         &--price::before {
             background-image: url('img/ico4.png');
         }
@@ -58,7 +60,7 @@ body {
         height: 30px;
         background-repeat: no-repeat;
 
-        @include sm {
+        @include md {
             display: none;
         }
     }
@@ -72,11 +74,11 @@ body {
         display: inline-block;
         background-color: white;
 
-        @include md{
+        @include lg {
            right: -40px;
         }
 
-        @include sm {
+        @include md {
             right: -28px;
         }
     }
@@ -91,6 +93,22 @@ body {
     display: flex;
 }
 
+.hamburger {
+    display: flex;
+    align-items: center;
+    display: none;
+    @include md {
+        display: flex;
+    }
+    &__ico {
+        font-size: 2rem;
+        margin-left: 2rem;
+        color: gray;
+
+        
+    }
+}
+
 
 .headbar {
     justify-content: space-between;
@@ -99,6 +117,12 @@ body {
     &__li {
         padding: 2.4rem 3rem 2.4rem 4rem;
         position: relative;
+
+        @include md {
+            padding: 2.4rem 1.3rem 2.4rem 4rem;
+        }
+
+        
         &::before {
             content: '';
             display: inline-block;
@@ -120,6 +144,9 @@ body {
         }
         &--client::before {
             background-image: url('./img/ico7.png');
+            @include md {
+                transform: translateY(1px);
+            }
         }
         &--bin::before {
             background-image: url('./img/ico8.png');
@@ -130,7 +157,7 @@ body {
        color: black;
        font-size: 1.2rem;
 
-       @include sm {
+       @include md {
        font-size: 0;
     }
    }
@@ -144,9 +171,10 @@ body {
 }
 
 .nav {
-    @include sm {
-       visibility: hidden;
-       max-height: 0;
+
+    @include md {
+        visibility: hidden;
+        max-height: 0;
     }
     &-item {
         padding: 27px 0;
@@ -158,9 +186,11 @@ body {
         font-weight: 500;
         padding: 0 4rem;
 
-        @include md{
+        @include lg {
             padding: 0 2rem;
         }
+
+   
     }
 }
 
@@ -169,15 +199,40 @@ body {
     @include sm {
         margin-right: 2rem;
     }
+
+    &__ico {
+        font-size: 1.4rem;
+        color: gray;
+    }
 }
 
 .main {
     padding-bottom: 30px;
 }
 
+.mobile {
+    visibility: hidden;
+    max-height: 0;
+    &__show {
+        @include md {
+            visibility: visible;
+        }
+    }
+    &__li {
+        text-align: center;
+        border-bottom: 1px solid #e6e6e6;
+        color: white;
+    }
+}
+
 .smallProducts {
     &--marginBottom {
         margin-bottom: 4rem;
+    }
+    &__marginB {
+        @include lg {
+            margin-bottom: 2rem;
+        }
     }
     &__img {
         width: 100%;
@@ -196,7 +251,7 @@ body {
         font-weight: 600;
         font-size: 1rem;
         padding: 5px 10px;
-        @include md{
+        @include lg{
             padding: 2px 0;
             top: 9px;
             left: 4px;
@@ -215,7 +270,7 @@ body {
         padding: 5px 9px;
         font-weight: 600;
 
-        @include md {
+        @include lg {
             padding: 2px 0;
             top: 9px;
             right: 4px;
@@ -256,7 +311,7 @@ body {
         margin-top: 3rem;
 
 
-        @include sm {
+        @include md {
             flex-basis: 100%;
             min-width: 100%;
             max-width: 100%;
@@ -302,11 +357,11 @@ body {
             font-size: 3rem;
             text-transform: uppercase;
 
-            @include lg {
+            @include xl {
                 font-size: 2.7rem;
             }
 
-            @include md {
+            @include lg {
                 font-size: 2.2rem;
             }
         }
@@ -376,7 +431,7 @@ body {
     }
     &__bottom {
         display: flex;
-        @include sm {
+        @include md {
             flex-wrap: wrap;
         }
     }
@@ -387,13 +442,13 @@ body {
         margin-bottom: 3rem;
         text-align: left;
 
-        @include sm {
+        @include md {
             flex-basis: 100%;
             text-align: center;
         }
     }
     &__flex {
-        @include sm {
+        @include md {
             display: flex;
         }
    }
@@ -402,7 +457,7 @@ body {
         margin-bottom: 4rem;
         font-weight: 600;
 
-        @include md{
+        @include lg{
             margin-bottom: 2rem;
             font-size: 1.6rem;
         }
@@ -411,7 +466,7 @@ body {
         padding: 1rem 0;
         font-size: 1.2rem;
 
-        @include md{
+        @include lg{
             padding: 0.5rem;
             font-size: 1.3rem;
         }
@@ -429,7 +484,7 @@ body {
         padding-left: 4rem;
         font-family: 'Poppins', sans-serif;
 
-        @include sm {
+        @include md {
             padding: 2rem;
         }
     }
@@ -447,8 +502,12 @@ body {
     &__logo {
         padding-bottom: 2rem;
 
-        @include sm {
+        @include md {
             flex: 1;
+        }
+        @include md {
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -506,7 +565,7 @@ body {
            font-size: 1.4rem;
            outline: none;
 
-           @include sm {
+           @include md {
             width: 20%;
         }
        }
